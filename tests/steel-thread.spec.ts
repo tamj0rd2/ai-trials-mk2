@@ -1,6 +1,4 @@
-import { test, expect, Page } from '@playwright/test';
-
-// High-level steel thread scenario: create and display a new task
+import { test, expect, type Page } from '@playwright/test';
 
 test.describe('Personal Task Management App', () => {
     test('can see a newly created task', async ({ page }) => {
