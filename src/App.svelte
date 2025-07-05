@@ -1,20 +1,20 @@
 <script lang="ts">
-import { onMount } from 'svelte';
-type Task = { title: string; completed: boolean };
-let tasks: Task[] = [];
-let newTaskTitle = '';
+  import { onMount } from 'svelte'
+  type Task = { title: string; completed: boolean }
+  let tasks: Task[] = []
+  let newTaskTitle = ''
 
-onMount(() => {
-  const stored = localStorage.getItem('tasks');
-  tasks = stored ? JSON.parse(stored) : [];
-});
+  onMount(() => {
+    const stored = localStorage.getItem('tasks')
+    tasks = stored ? JSON.parse(stored) : []
+  })
 
-function addTask() {
-  const task = { title: newTaskTitle, completed: false };
-  tasks = [...tasks, task];
-  localStorage.setItem('tasks', JSON.stringify(tasks));
-  newTaskTitle = '';
-}
+  function addTask() {
+    const task = { title: newTaskTitle, completed: false }
+    tasks = [...tasks, task]
+    localStorage.setItem('tasks', JSON.stringify(tasks))
+    newTaskTitle = ''
+  }
 </script>
 
 <main>
@@ -35,5 +35,3 @@ function addTask() {
     {/each}
   </ul>
 </main>
-
-

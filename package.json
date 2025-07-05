@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "npm run check && vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.playwright.json --noEmit"
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.playwright.json --noEmit",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@playwright/test": "^1.53.2",
