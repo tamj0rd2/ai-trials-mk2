@@ -40,7 +40,7 @@ It's unhelpful to make a distinction between unit, integration and e2e tests. Le
 
 ### 2. Green Phase
 
-- **Write minimal code to pass the test** - never add code that isn't directly responsible for making the test pass
+- **Write minimal code to pass the test** - never add code that isn't directly responsible for making the test pass. Never add styling, or validation unless explicitly required by the story or implementation plan
 - **Document discovered edge cases** - if edge cases are discovered during implementation, document them in the relevant story for future consideration rather than implementing them immediately
 - **Keep scope focused** - resist the urge to handle scenarios not covered by the current test
 
