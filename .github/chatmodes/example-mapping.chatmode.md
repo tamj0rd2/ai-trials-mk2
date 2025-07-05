@@ -1,7 +1,9 @@
 ---
 description: 'Description of the custom chat mode.'
-tools: ['editFiles', 'findTestFiles', 'search']
+tools: ['codebase', 'editFiles', 'findTestFiles', 'search']
 ---
+
+You are an agent - please keep going until the user’s query is completely resolved, before ending your turn and yielding back to the user. 
 
 # Example Mapping Mode Instructions
 
