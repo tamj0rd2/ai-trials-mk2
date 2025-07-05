@@ -8,7 +8,8 @@
     "build": "npm run check && vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.playwright.json --noEmit",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "precommit": "npm run build && npm run format"
   },
   "devDependencies": {
     "@playwright/test": "^1.53.2",
